@@ -55,7 +55,7 @@ body {
 
 .btn:hover {
     background-color: #12A682;
-    transform: translateY(0.25em);
+    /*transform: translateY(0.25em);*/
     box-shadow: 0 0 0.5em 0 black;
     border-color: black;
 }
@@ -111,7 +111,7 @@ nav {
         margin: 0;
         color: white;
         li {
-            font-size: 1rem;
+            font-size: 1.2vw;
             text-align: center;
             padding: 0 3em 0 0;
             text-decoration: none;
@@ -139,34 +139,69 @@ nav {
 }
 
 .catalog {
-    height: 50vh;
+    /*height: 40vh;*/
+    flex-direction: column;
     align-items: center;
+    /*justify-content: space-between;*/
+    padding: 10vh 10vw;
 
     h1, p {
         color: #313238;
     }
 
     .catalog-text {
-        width: 40vw;
-        margin-left: 10vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80vw;
+        h1 {
+            margin-top: 5vh;
+            margin-right: 5vw;
+        }
+        p {
+            width: 40vw;
+            margin-bottom: 0;
+        }
     }
 
-    .catalog-brand {
+    .catalog-brand-top {
+        width: 80vw;
+        justify-content: space-between;
 
+        img {
+            height: 5vw;
+        }
+    }
+
+    .catalog-brand-bottom {
+        width: 100vw;
+        justify-content: space-between;
+        img {
+            width: 10vw;
+            height: 5vw;
+        }
     }
 }
 
 .work-examples {
     flex-direction: column;
-    border-top: 2px solid #2ECAA5;
+    /*border-top: 2px solid #2ECAA5;*/
 
-    .work-examples-text-bgr {
-        height: 40vh;
+    .work-examples-container {
+        height: 70vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("src/images/car.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 0;
 
-        .work-examples-text {
-            margin: 5vh 10vw;
-            width: 50vw;
+        .work-examples-photos-container {
+            height: 50vh;
+            width: 60vw;
+            border: 5px solid black;
+            border-radius: 50px;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+            background: white;
         }
     }
 }
