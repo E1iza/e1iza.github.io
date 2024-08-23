@@ -21,33 +21,24 @@
     </header>
     <nav class="flex">
         <ul class="flex">
-            <li>О компании</li>
-            <li>Наши услуги</li>
-            <li>Примеры работ</li>
-            <li>Контакты</li>
+            <li><a href="#about-company">О компании</a></li>
+            <li><a href="#catalog">Наши услуги</a></li>
+            <li><a href="#work-examples">Примеры работ</a></li>
+            <li><a href="#contacts">Контакты</a></li>
         </ul>
     </nav>
     <main>
-        <div class="about-company">
+        <div class="about-company" id="about-company">
             <div class="about-company-text flex">
                 <h1 class="h">Быстрый и качественный ремонт турбокомпрессоров</h1>
                 <p class="p">Наша компания специализируется на ремонте турбокомпрессоров автомобилей любой сложности</p>
                 <p class="p">Основа нашей работы - профессиональный подход и надежность</p>
-                <button class="btn">посмотреть цены</button>
+                <a href="#work-examples">
+                    <button class="btn">примеры работ</button>
+                </a>
             </div>
         </div>
-        <div class="catalog flex">
-            <div class="catalog-brand-top flex">
-                <img src="src/images/brands/bmw.png" alt="bmw logo">
-                <img src="src/images/brands/vw-logo.png" alt="vw logo">
-                <img src="src/images/brands/nissan.png" alt="nissan logo">
-                <img src="src/images/brands/toyota.png" alt="toyota logo">
-                <img src="src/images/brands/audi.png" alt="audi logo">
-                <img src="src/images/brands/hendai.png" alt="hendai logo">
-                <img src="src/images/brands/skoda.png" alt="skoda logo">
-                <img src="src/images/brands/benz.png" alt="benz logo">
-                <img src="src/images/brands/renault.png" alt="renault logo">
-            </div>
+        <div class="catalog flex" id="catalog">
             <div class="catalog-text flex">
                 <h1 class="h">Наши услуги</h1>
                 <div class="text-container flex">
@@ -89,8 +80,19 @@
                     </div>
                 </div>
             </div>
+            <div class="catalog-brand flex">
+                <img src="src/images/brands/bmw.png" alt="bmw logo">
+                <img src="src/images/brands/vw-logo.png" alt="vw logo">
+                <img src="src/images/brands/nissan.png" alt="nissan logo">
+                <img src="src/images/brands/toyota.png" alt="toyota logo">
+                <img src="src/images/brands/audi.png" alt="audi logo">
+                <img src="src/images/brands/hendai.png" alt="hendai logo">
+                <img src="src/images/brands/skoda.png" alt="skoda logo">
+                <img src="src/images/brands/benz.png" alt="benz logo">
+                <img src="src/images/brands/renault.png" alt="renault logo">
+            </div>
         </div>
-        <div class="work-examples flex">
+        <div class="work-examples flex" id="work-examples">
             <div class="work-examples-container flex">
                 <h1 class="h">Примеры выполненных работ</h1>
                 <div class="work-examples-photos-container flex">
@@ -112,20 +114,26 @@
                         </div>
                     </div>
                     <div class="arrow-container flex">
-                        <div class="arrow arrow-left flex">
+                        <div class="arrow arrow-left flex" onclick="plusSlides(-1)">
                             <img src="src/images/arrow.png" alt="arrow-left">
                         </div>
-                        <div class=" arrow arrow-right flex">
+                        <div class="arrow arrow-right flex" onclick="plusSlides(1)">
                             <img src="src/images/arrow.png" alt="arrow-right">
                         </div>
                     </div>
                 </div>
+                <div class="points">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
             </div>
         </div>
     </main>
-
     </body>
-    <footer class="flex">
+    <footer class="flex" id="contacts">
         <div class="brand flex">
             <img class="logo" src="src/images/logo.png" alt="logo">
             <div class="brand-name-description flex">
@@ -138,3 +146,4 @@
         </div>
     </footer>
 </html>
+<script src="index.js"></script>

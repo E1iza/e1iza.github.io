@@ -55,7 +55,6 @@ body {
 
 .btn:hover {
     background-color: #12A682;
-    /*transform: translateY(0.25em);*/
     box-shadow: 0 0 0.5em 0 black;
     border-color: black;
 }
@@ -153,7 +152,7 @@ nav {
         align-items: center;
         width: 80vw;
         h1 {
-            margin-top: 5vh;
+            margin-top: 0;
         }
 
         .icon {
@@ -181,7 +180,8 @@ nav {
         }
     }
 
-    .catalog-brand-top {
+    .catalog-brand {
+        margin-top: 5vw;
         width: 80vw;
         justify-content: space-between;
 
@@ -189,20 +189,10 @@ nav {
             height: 5vw;
         }
     }
-
-    .catalog-brand-bottom {
-        width: 100vw;
-        justify-content: space-between;
-        img {
-            width: 10vw;
-            height: 5vw;
-        }
-    }
 }
 
 .work-examples {
     flex-direction: column;
-    /*border-top: 2px solid #2ECAA5;*/
 
     .work-examples-container {
         height: 90vh;
@@ -278,13 +268,11 @@ nav {
             margin: 0;
             padding: 0;
             background-color: rgba(0.2, 0.2, 0.2, 0.1);
-            /*background-size: contain;*/
             width: 7vw;
             height: 7vw;
             border-radius: 50%;
             justify-content: center;
             align-items: center;
-            /*padding-right: 2vw;*/
 
             img {
                 height: 5vw;
@@ -306,6 +294,25 @@ nav {
 
         .arrow-right {
             margin-right: 5px;
+        }
+
+        .points {
+            text-align: center;
+
+            .dot {
+                cursor: pointer;
+                height: 1vw;
+                width: 1vw;
+                margin: 1vw 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
         }
     }
 }
