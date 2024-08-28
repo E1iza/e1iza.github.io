@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
           el.classList.remove('nav-active');
         }
       })
+      document.querySelectorAll('nav li')[i].querySelector('a').classList.add('nav-active');
     }
-    document.querySelectorAll('nav li')[i].querySelector('a').classList.add('nav-active');
   });
 })
