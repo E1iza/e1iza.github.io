@@ -21,14 +21,14 @@
     </header>
     <nav class="flex">
         <ul class="flex">
-            <li><a href="#about-company">О компании</a></li>
+            <li><a href="#about-company" class="nav-active">О компании</a></li>
             <li><a href="#catalog">Наши услуги</a></li>
             <li><a href="#work-examples">Примеры работ</a></li>
             <li><a href="#contacts">Контакты</a></li>
         </ul>
     </nav>
     <main>
-        <div class="about-company" id="about-company">
+        <section class="about-company section" id="about-company">
             <div class="about-company-text flex">
                 <h1 class="h">Быстрый и качественный ремонт турбокомпрессоров</h1>
                 <p class="p">Наша компания специализируется на ремонте турбокомпрессоров автомобилей любой сложности</p>
@@ -37,8 +37,8 @@
                     <button class="btn">примеры работ</button>
                 </a>
             </div>
-        </div>
-        <div class="catalog flex" id="catalog">
+        </section>
+        <section class="catalog flex section" id="catalog">
             <div class="catalog-text flex">
                 <h1 class="h">Наши услуги</h1>
                 <div class="text-container flex">
@@ -91,8 +91,8 @@
                 <img src="src/images/brands/benz.png" alt="benz logo">
                 <img src="src/images/brands/renault.png" alt="renault logo">
             </div>
-        </div>
-        <div class="work-examples flex" id="work-examples">
+        </section>
+        <section class="work-examples flex section" id="work-examples">
             <div class="work-examples-container flex">
                 <h1 class="h">Примеры выполненных работ</h1>
                 <div class="work-examples-photos-container flex">
@@ -130,10 +130,10 @@
                     <span class="dot" onclick="currentSlide(5)"></span>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     </body>
-    <footer class="flex" id="contacts">
+    <footer class="flex section" id="contacts">
         <div class="brand flex">
             <img class="logo" src="src/images/logo.png" alt="logo">
             <div class="brand-name-description flex">
@@ -146,4 +146,5 @@
         </div>
     </footer>
 </html>
-<script src="index.js"></script>
+<script src="scrollSlides.js"></script>
+<script src="scrollNavbar.js"></script>
