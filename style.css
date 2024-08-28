@@ -352,3 +352,9 @@ footer {
     flex-direction: column;
     text-align: center;
 }
+
+.vk-link {
+    display: block;
+    width: 2.5vw;
+    margin-left: 2vw;
+}
