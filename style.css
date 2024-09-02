@@ -71,6 +71,10 @@ header {
     color: #313238;
 }
 
+.nav-icon {
+    display: none;
+}
+
 .brand {
     align-items: flex-end;
 }
@@ -97,6 +101,7 @@ header {
 }
 
 nav {
+    display: flex;
     background: linear-gradient(90deg, #14163D, #29648A);
     border-bottom: 3px solid #2ECAA5;
     height: 5vh;
@@ -330,15 +335,15 @@ nav {
             margin: 0;
             padding: 0;
             background-color: rgba(0.2, 0.2, 0.2, 0.1);
-            width: 7vw;
-            height: 7vw;
+            width: 5vw;
+            height: 5vw;
             border-radius: 50%;
             justify-content: center;
             align-items: center;
 
             img {
-                height: 5vw;
-                width: 4vw;
+                height: 4vw;
+                width: 3vw;
                 margin-left: 1vw;
             }
         }
@@ -416,4 +421,82 @@ footer {
     display: block;
     width: 2.5vw;
     margin-left: 2vw;
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+    header {
+        padding: 0 5vw 1vh 5vw;
+        height: 7vh;
+        align-items: flex-end;
+        border-bottom: 5px solid #2ECAA5;
+        position: sticky;
+
+        .nav-icon {
+            display: block;
+            background-image: url("src/images/nav.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 6vh;
+            height: 5vh;
+            margin-bottom: 0.5vw;
+        }
+
+        .on-active, .simulated-active:active {
+            nav {
+                display: flex;
+            }
+        }
+
+        .brand-description {
+            display: none;
+        }
+
+        .brand {
+            flex-direction: row-reverse;
+            margin: 0;
+            padding: 0;
+            align-items: flex-end;
+        }
+
+        .brand-name {
+            font-size: 3vh;
+            margin: 0 1vh 1vh 0;
+        }
+
+        .logo {
+            width: 6vh;
+        }
+
+        .contacts {
+            display: none;
+        }
+    }
+
+    nav {
+        position: absolute;
+        top: 8vh;
+        border: none;
+        height: 70vh;
+        width: 75vw;
+        align-items: flex-start;
+        padding-top: 3vh;
+        display: none;
+
+        ul {
+            padding: 0 5vw;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            li {
+                font-size: 3.5vw;
+                padding-bottom: 7vh;
+            }
+
+            .on-hover, .simulated-hover:hover {
+                color: #2ECAA5;
+            }
+        }
+
+    }
 }
