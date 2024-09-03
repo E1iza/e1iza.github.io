@@ -155,7 +155,6 @@ nav {
     flex-direction: column;
     align-items: center;
     padding: 10vh 10vw;
-    /*height: 100vh;*/
 
     h1, p {
         color: #313238;
@@ -409,31 +408,35 @@ footer {
         font-size: 1vw;
         line-height: 1.5vw;
     }
-}
 
-.address {
-    flex-direction: column;
-    text-align: center;
-    font-size: 1vw;
-}
+    .address {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1vw;
+    }
 
-.vk-link {
-    display: block;
-    width: 2.5vw;
-    margin-left: 2vw;
+    .vk-link {
+        display: block;
+        width: 2.5vw;
+        margin-left: 2vw;
+    }
 }
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
     header {
         padding: 0 5vw 1vh 5vw;
-        height: 7vh;
+        height: 8vh;
+        width: 90vw;
         align-items: flex-end;
         border-bottom: 5px solid #2ECAA5;
-        position: sticky;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 2;
 
         .nav-icon {
             display: block;
-            background-image: url("src/images/nav.png");
             background-size: contain;
             background-repeat: no-repeat;
             width: 6vh;
@@ -441,10 +444,12 @@ footer {
             margin-bottom: 0.5vw;
         }
 
-        .on-active, .simulated-active:active {
-            nav {
-                display: flex;
-            }
+        .nav-icon-off {
+            background-image: url("src/images/nav.png");
+        }
+
+        .nav-icon-on {
+            background-image: url("src/images/nav-on.png");
         }
 
         .brand-description {
@@ -473,8 +478,8 @@ footer {
     }
 
     nav {
-        position: absolute;
-        top: 8vh;
+        position: fixed;
+        top: 9vh;
         border: none;
         height: 70vh;
         width: 75vw;
@@ -497,6 +502,182 @@ footer {
                 color: #2ECAA5;
             }
         }
+    }
 
+    main {
+        margin-top: 8vh;
+    }
+
+    .about-company {
+        min-height: 92vh;
+
+        .about-company-text {
+            margin-left: 5vw;
+            width: 90vw;
+
+        }
+
+        h1 {
+            font-size: 6vw;
+            line-height: 5vh;
+            margin-bottom: 4vh;
+        }
+
+        p {
+            width: 75vw;
+            font-size: 4vw;
+            line-height: 3vh;
+            padding-bottom: 4vh;
+        }
+
+        .btn {
+            width: 40vw;
+            height: 10vw;
+            font-size: 4vw;
+        }
+    }
+
+    .catalog {
+        /*max-height: 92vh;*/
+        padding: 5vh 5vw;
+
+        .catalog-text h1 {
+            font-size: 6vw;
+        }
+
+        .text-container {
+            flex-direction: column;
+
+            .icon {
+                width: 90vw;
+
+                .p {
+                    width: 75vw;
+                    font-size: 3vw;
+                    line-height: 2vh;
+                    margin-left: 5vw;
+                }
+
+                img {
+                    width: 10vw;
+                }
+            }
+        }
+
+        .catalog-brand {
+            width: 90vw;
+            margin-top: 5vh;
+
+            img {
+                height: 7vw;
+            }
+        }
+    }
+
+    .work-examples {
+        min-height: 92vh;
+        padding: 0;
+        margin: 0;
+
+        .work-examples-container {
+            padding: 0;
+            justify-content: flex-start;
+
+            h1 {
+                margin-top: 10vh;
+                font-size: 6vw;
+            }
+
+            .work-examples-photos-container {
+                margin-top: 3vh;
+                width: 90vw;
+
+                .work-examples-photos {
+                    width: 90vw;
+
+                    .slides {
+                        flex-direction: column;
+                        width: 90vw;
+                        height: 70vh;
+
+                        h2 {
+                            font-size: 4vw;
+                        }
+
+                        .slide-left {
+                            width: 90vw;
+                            height: 35vh;
+                            border-radius: 50px 50px 0 0;
+                            border-bottom: 3px solid black;
+                        }
+                        .slide-right {
+                            width: 90vw;
+                            height: 35vh;
+                            border-radius: 0 0 50px 50px;
+                        }
+                    }
+                }
+            }
+
+            .arrow-container {
+                width: 90vw;
+                height: 70vh;
+
+                .arrow {
+                    width: 10vw;
+                    height: 10vw;
+
+                    img {
+                        height: 9vw;
+                        width: 6vw;
+                    }
+                }
+            }
+
+            .points {
+                .dot {
+                    width: 3vw;
+                    height: 3vw;
+                    margin: 2vw 5px;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 7vh;
+        padding: 1vh 5vw;
+        align-items: center;
+        border-top: 5px solid #2ECAA5;
+        .brand {
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+            width: 30vw;
+            .logo {
+                display: none;
+            }
+
+            .brand-name {
+                font-size: 3vw;
+                line-height: 2vh;
+            }
+
+            .vk-link {
+                margin: 0 2vw 0 0;
+                height: 7vw;
+                width: 7vw;
+            }
+        }
+
+        .address, .contacts {
+            font-size: 3vw;
+            line-height: 2vh;
+            width: 30vw;
+        }
+
+        .none-contacts {
+            display: none;
+        }
     }
 }
