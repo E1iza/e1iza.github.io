@@ -652,7 +652,7 @@ footer {
         .brand {
             justify-content: flex-start;
             align-items: flex-end;
-            flex-direction: row-reverse;
+            /*flex-direction: row-reverse;*/
             width: 30vw;
             .logo {
                 display: none;
@@ -661,17 +661,18 @@ footer {
             .brand-name {
                 font-size: 3vw;
                 line-height: 2vh;
+                display: none;
             }
 
             .vk-link {
-                margin: 0 2vw 0 0;
+                margin: 0 1vw 0 0;
                 height: 7vw;
                 width: 7vw;
             }
         }
 
         .address, .contacts {
-            font-size: 3vw;
+            font-size: 2.5vw;
             line-height: 2vh;
             width: 30vw;
         }
