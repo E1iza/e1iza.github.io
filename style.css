@@ -385,40 +385,48 @@ nav {
 
 footer {
     padding: 1vh 10vw;
-    justify-content: space-between;
-    align-items: center;
     color: white;
     height: 10vh;
     background: linear-gradient(90deg, #14163D, #29648A);
     border-top: 3px solid #2ECAA5;
 
-    .brand-name {
-        font-size: 1.2em;
-    }
-
-    .brand {
+    .footer-desktop {
+        justify-content: space-between;
         align-items: center;
+        width: 80vw;
+
+        .brand-name {
+            font-size: 1.2em;
+        }
+
+        .brand {
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 0.5vw;
+        }
+
+        .contacts {
+            font-size: 1vw;
+            line-height: 1.5vw;
+        }
+
+        .address {
+            flex-direction: column;
+            text-align: center;
+            font-size: 1vw;
+        }
+
+        .vk-link {
+            display: block;
+            width: 2.5vw;
+            margin-left: 2vw;
+        }
     }
 
-    .logo {
-        margin-right: 0.5vw;
-    }
-
-    .contacts {
-        font-size: 1vw;
-        line-height: 1.5vw;
-    }
-
-    .address {
-        flex-direction: column;
-        text-align: center;
-        font-size: 1vw;
-    }
-
-    .vk-link {
-        display: block;
-        width: 2.5vw;
-        margin-left: 2vw;
+    .footer-mobile {
+        display: none;
     }
 }
 
@@ -645,39 +653,87 @@ footer {
     }
 
     footer {
-        height: 7vh;
-        padding: 1vh 5vw;
-        align-items: center;
+        height: 10vh;
+        padding: 3vh 5vw;
         border-top: 5px solid #2ECAA5;
-        .brand {
-            justify-content: flex-start;
-            align-items: flex-end;
-            /*flex-direction: row-reverse;*/
-            width: 30vw;
-            .logo {
-                display: none;
-            }
+        font-size: 2.7vw;
 
-            .brand-name {
-                font-size: 3vw;
-                line-height: 2vh;
-                display: none;
-            }
-
-            .vk-link {
-                margin: 0 1vw 0 0;
-                height: 7vw;
-                width: 7vw;
-            }
+        .footer-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
         }
 
-        .address, .contacts {
-            font-size: 2.5vw;
+        .brand-and-address {
+            width: 90vw;
+            justify-content: space-between;
+        }
+
+        .brand-name {
+            font-size: 4vw;
+            line-height: 4vw;
+        }
+
+        .brand {
+        }
+
+        .logo {
+            width: 7vw;
+            height: 6vw;
+            margin-right: 0.5vw;
+        }
+
+        .vk-link-container {
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .vk-link {
+            display: block;
+            width: 6vw;
+        }
+
+        .address {
+            flex-direction: column;
+            /*justify-content: center;*/
+            align-items: flex-end;
             line-height: 2vh;
             width: 30vw;
         }
 
-        .none-contacts {
+        .contacts {
+            width: 90vw;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .phone {
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    line-height: 5vw;
+                }
+
+                img {
+                    /*margin-right: 2vw;*/
+                }
+            }
+        }
+
+        .only-mobile {
+            display: block;
+            width: 5vw;
+            height: 5vw;
+        }
+
+        .footer-desktop {
             display: none;
         }
     }
