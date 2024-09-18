@@ -408,7 +408,7 @@ footer {
         }
 
         .contacts {
-            font-size: 1vw;
+            font-size: 1.2vw;
             line-height: 1.5vw;
         }
 
@@ -421,7 +421,7 @@ footer {
         .vk-link {
             display: block;
             width: 2.5vw;
-            margin-left: 2vw;
+            /*margin-left: 2vw;*/
         }
     }
 
@@ -561,7 +561,7 @@ footer {
 
                 .p {
                     width: 75vw;
-                    font-size: 3vw;
+                    font-size: 3.5vw;
                     line-height: 2vh;
                     margin-left: 5vw;
                 }
@@ -653,8 +653,8 @@ footer {
     }
 
     footer {
-        height: 15vh;
-        padding: 3vh 5vw;
+        height: 10vh;
+        padding: 2vh 5vw;
         border-top: 5px solid #2ECAA5;
         font-size: 2.7vw;
 
@@ -671,16 +671,16 @@ footer {
         }
 
         .brand-name {
-            font-size: 4vw;
-            line-height: 4vw;
+            font-size: 4.5vw;
+            line-height: 5vw;
         }
 
         .brand {
         }
 
         .logo {
-            width: 7vw;
-            height: 6vw;
+            width: 8vw;
+            height: 8vw;
             margin-right: 0.5vw;
         }
 
@@ -691,7 +691,7 @@ footer {
 
         .vk-link {
             display: block;
-            width: 6vw;
+            width: 8vw;
         }
 
         .address {
@@ -705,9 +705,9 @@ footer {
         .contacts {
             width: 90vw;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            font-size: 3.5vw;
+            font-size: 4vw;
 
             a {
                 text-decoration: none;
@@ -715,8 +715,9 @@ footer {
             }
 
             .phone {
-                width: 40vw;
+                width: 90vw;
                 align-items: center;
+                justify-content: center;
 
                 .number {
                     margin: 0;
