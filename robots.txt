@@ -1,0 +1,4 @@
+User-agent: *
+
+Host: https://xn----btbkorgddpfubn.xn--p1acf/
+Sitemap: https://xn----btbkorgddpfubn.xn--p1acf/sitemap.xml
