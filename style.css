@@ -667,7 +667,7 @@ footer {
 
         .brand-and-address {
             width: 90vw;
-            justify-content: space-between;
+            justify-content: center;
         }
 
         .brand-name {
